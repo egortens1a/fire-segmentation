@@ -48,6 +48,8 @@ pip install -r requirements.txt
 - `deeplabv3plus_resnet50.pth` - DeepLabV3+ для сложных сцен
 - `unetplusplus_efficientnetb3.pth` - U-Net++ для мелких деталей
 
+[ссылка на архив с обученными моделями в ноутбуке](https://drive.google.com/file/d/1ggImpO5AwP0Bdx_-8c6qo-tkNdDIM5Sk/view?usp=sharing)
+
 ### 3. Запуск инференса
 
 ```bash
@@ -77,11 +79,12 @@ python demo.py --input data/input/ --output data/output/ --verbose
 
 Для каждого входного изображения `image.jpg` создаются 3 файла:
 
-| Файл | Описание |
-|------|----------|
-| `{image_name}_mask.png` | Бинарная маска (0/255) - белым выделены области огня |
-| `{image_name}_prob_mask.png` | Бинарная маска (0/255) - белым выделены области огня |
-| `{image_name}_overlay.png` | Исходное изображение с наложенной полупрозрачной красной маской |
+| Файл | Описание | Расположение |
+|------|----------| ------------ |
+| `{image_name}_mask.png` | Бинарная маска (0/255) - белым выделены области огня | `output_path/masks/` |
+| `{image_name}_prob_mask.png` | Бинарная маска (0/255) - белым выделены области огня | `output_path/prob_masks/` |
+| `{image_name}_overlay.png` | Исходное изображение с наложенной полупрозрачной красной маской | `output_path/overlay_mask/` |
+
 
 ## Конфигурация
 
