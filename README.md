@@ -35,7 +35,7 @@ fire_segmentation_inference/
 
 ```bash
 # Клонирование репозитория
-git clone <repository_url>
+git clone https://github.com/egortens1a/fire-segmentation.git
 cd fire_segmentation_inference
 
 # Установка зависимостей
