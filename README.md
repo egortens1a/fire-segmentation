@@ -9,7 +9,7 @@
 ## Структура проекта
 
 ```
-fire_segmentation_inference/
+fire_segmentation/
 ├── config/                             # Конфигурационные файлы
 │   └── inference.yaml                  # Параметры инференса и пути
 ├── notebooks/                          # Директория с ноутбуками
@@ -35,7 +35,7 @@ fire_segmentation_inference/
 ```bash
 # Клонирование репозитория
 git clone https://github.com/egortens1a/fire-segmentation.git
-cd fire_segmentation_inference
+cd fire-segmentation
 
 # Установка зависимостей
 pip install -r requirements.txt
@@ -114,3 +114,7 @@ preprocessing: # параметры распределений, соотвест
 | `deeplabv3plus_resnet50` | DeepLabV3+ с ResNet50 | Хорош для сложных сцен, точная сегментация |
 | `unetplusplus_efficientnetb3` | U-Net++ с EfficientNet-B3 | Лучше передаёт многоуровневые признаки |
 
+### Результаты обучения
+![alt text](images_for_readme/image1.png)
+### Пример работы моделей
+![alt text](images_for_readme/image.png)
