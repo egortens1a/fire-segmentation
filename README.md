@@ -117,4 +117,7 @@ preprocessing: # параметры распределений, соотвест
 ### Результаты обучения
 ![alt text](images_for_readme/image1.png)
 ### Пример работы моделей
+Положительный пример:
 ![alt text](images_for_readme/image.png)
+Негативный пример:
+![alt text](images_for_readme/image3.png)
